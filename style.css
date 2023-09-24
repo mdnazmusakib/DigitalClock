@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    overflow:hidden;
+    /* background: conic-gradient(from 90deg at bottom right, cyan, rebeccapurple); */
+    background-color: rgb(2, 2, 42);
+}
+
+.container{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalClock{
+    /* border: 1px solid blue; */
+    /* width: 50%;
+    height: 70vh;
+    margin: auto; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #baa7a7;
+}
+
+.digitalClock:hover{
+    background: #eaacac;
+}
+
+.date h2{
+    display: inline-flex;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    margin: 2px 10px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.time h1{
+    display: inline-flex;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    margin: 5px 10px;
+    font-size: 5rem;
+    letter-spacing: 3px;
+
+}
+
+.time h1:last-child{
+    color: black;
+    /* background-color: blue; */
+    border-radius: 5px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0px 5px;
+}
+
+@media(max-width:768px){
+    #das-1,#das-2,#comma{
+        display: none;
+    }
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+    .time h1{
+        display: block;
+        font-size: 4rem;
+    }
+    .date h2{
+        display: block;
+        font-size: 2rem;
+    }
+}
+
